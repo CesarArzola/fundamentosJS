@@ -1,125 +1,59 @@
 console.log("Conexion exitosa con js")
-
-// EJERCICIO 1
+// EJERCICIO 11
 // Resultado esperado en alert:
-// "Bienvenido Juan"
+// `El estudiante Juan tiene nota 6.5 y su resultado es: Excelente rendimiento`
 
-function ejercicio1() {
-    let nombre = "Diego"
-    alert(`Bienvenido ${nombre}`)
-}
-
-
-// EJERCICIO 2
-// Resultado esperado en alert:
-// "La suma es: 15"
-
-function ejercicio2() {
-    let num1 = 10;
-    let num2 = 5;
-    let suma = num1 + num2;
-    alert(`La suma es: ${suma}`)
-}
-
-
-// EJERCICIO 3
-// Resultado esperado en alert:
-// "La resta es: 12"
-
-function ejercicio3() {
-    let resta = 112 - 100;
-    alert(`La resta es: ${resta}`)
-}
-
-
-// EJERCICIO 4
-// Resultado esperado en alert:
-// "La multiplicación es: 24"
-
-function ejercicio4() {
-    let multiplicacion = 6 * 4;
-    alert(`La multiplicacion es: ${multiplicacion}`)
-}
-
-
-// EJERCICIO 5
-// Resultado esperado en alert:
-// "El promedio es: 5.7"
-
-function ejercicio5() {
-    let nota1 = 6.0;
-    let nota2 = 5.5;
-    let nota3 = 5.6;
-    let promedio = (nota1 + nota2 + nota3) / 3;
-    alert(`El promedio es: ${promedio}`)
-}
-
-
-// EJERCICIO 6
-// Resultado esperado en alert:
-// "Es mayor de edad"
-
-function ejercicio6() {
-    let edad = 17;
-    if (edad >= 18) {
-    } else {
-        alert(`es menor de edad`)
+function ejercicio11() {
+    let nombre = "Juan";
+    let nota = 6.5;
+    if (nota >= 6.0) {
+        alert(`El estudiante ${nombre} tine una nota ${nota} y su resultado es: Excelente rendimiento`);
+    } else if (nota >= 4.0) {
+        alert(`El estudiante ${nombre} tiene una nota ${nota} y su resultado es: Estudiante aprobado`);
+    } else{
+        alert(`El estudiante ${nombre} tiene una nota ${nota} y su resultado es: Estudiante reprobado`);
     }
 }
 
 
-// EJERCICIO 7
+// EJERCICIO 12
 // Resultado esperado en alert:
-// "El número es par"
+// `El nombre convertido es: DANIEL PÉREZ y tiene 12 caracteres`
 
-function ejercicio7() {
-    let numero = 18;
-    if (numero % 2 == 0) {
-        alert(`El numero es par`)
-    } else {
-        alert(`El numero es impar`)
-    }
+function ejercicio12() {
+let nombreCompleto = "Daniel Perez";
+alert(`El nombre convertido es: ${nombreCompleto.toLowerCase()} y tiene ${nombreCompleto.length} caracteres`)
 }
 
 
-// EJERCICIO 8
+// EJERCICIO 13
 // Resultado esperado en alert:
-// "Estudiante aprobado"
+// `El correo convertido es: ejemplo@gmail.com y el resultado es: correo válido`
 
-function ejercicio8() {
-    let nota = 4.5;
-
-    if (nota >= 4.0) {
-        alert(`Estudiante aprobado`);
-    } else {
-        alert(`Estudiante reprobado`);
-    }
+function ejercicio13() {
+let correo = "eJEmPLo@gMAil.cOM";
+let corregido = correo.toLowerCase();
+if(corregido.length > 15){
+    alert(`El correo convertido es: ${correo} y el resultado es: ${corregido}\nValido la cantidad de caracteres: ${corregido.length}`)
+} else{
+    alert(`El correo convertido es: ${correo} y el resultado es: ${corregido}\nInvalido la cantidad de caracteres: ${corregido.length}`)
+}
 }
 
 
-
-// EJERCICIO 9
+// EJERCICIO 14
 // Resultado esperado en alert:
-// "Precio final con descuento: $18000"
+// `La frase "Estoy aprendiendo JavaScript" tiene 28 caracteres y corresponde a una frase larga`
 
-function ejercicio9() {
-    let precio = 180000;
-    let porcentaje = 10;
-    let descuento = (precio * porcentaje) / 100;
-    alert(`Precio final con descuento: ${descuento}`);
+function ejercicio14() {
+
 }
 
 
-// EJERCICIO 10
+// EJERCICIO 15
 // Resultado esperado en alert:
-// "El número mayor es: 22"
+// `El producto TECLADO tiene un precio final de $45000`
 
-function ejercicio10() {
-    let num1 = 22;
-    let num2 = 10;
-    if (num1 > num2) {
-        alert(`El numero mayor es: ${num1}`);
-    } else {
-        alert(` El numero mayor es: ${num2}`);
-    }
+function ejercicio15() {
+
 }
