@@ -299,6 +299,32 @@ function ejercicio20() {
 // ≥ 60 → Regular
 // < 60 → Deficiente
 
+function ejercicio21() {
+    let frase = "Existe tiempo suficiente para aprender diversas cosas. También hay tiempo para cometer errores.";
+    let puntaje = 100
+    if (puntaje >= 90) {
+        alert(`La frase "${frase.toUpperCase()}"
+            \ntiene un largo de ${frase.length} caracteres
+            \ny un puntaje de ${puntaje} puntos, por lo que es excelente.`);
+    } else if (puntaje >= 80) {
+        alert(`La frase "${frase.toUpperCase()}"
+            \ntiene un largo de ${frase.length} caracteres
+            \ny un puntaje de ${puntaje} puntos, por lo que es muy buena.`);
+    } else if (puntaje >= 70) {
+        alert(`La frase "${frase.toUpperCase()}"
+            \ntiene un largo de ${frase.length} caracteres
+            \ny un puntaje de ${puntaje} puntos, por lo que es buena.`);
+    } else if (puntaje >= 60) {
+        alert(`La frase "${frase.toUpperCase()}"
+            \ntiene un largo de ${frase.length} caracteres
+            \ny un puntaje de ${puntaje} puntos, por lo que es una frase regular.`);
+    } else {
+        alert(`La frase "${frase.toUpperCase()}"
+            \ntiene un largo de ${frase.length} caracteres
+            \ny un puntaje de ${puntaje} puntos, por lo que es una frase deficiente.`);
+    }
+}
+
 // Además:
 
 // Clasificar la frase por tamaño:
